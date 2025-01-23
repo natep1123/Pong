@@ -1,0 +1,53 @@
+.Game-Over {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#final-score {
+  font-size: 2rem;
+  color: #f8f8f8;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#play-again-button {
+  font-size: 1.25rem;
+  color: #f8f8f8;
+  background-color: #af1b1b;
+  border-radius: 10px;
+  border: 2px solid #0f0f0f;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#play-again-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#start-screen-button {
+  font-size: 1.25rem;
+  color: #f8f8f8;
+  background-color: #af1b1b;
+  border-radius: 10px;
+  border: 2px solid #0f0f0f;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#start-screen-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

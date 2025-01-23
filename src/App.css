@@ -1,0 +1,81 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #171717;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #171717;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.Box {
+  position: relative;
+  margin: 20px auto; /* Add vertical spacing from the button */
+  width: 80%; /* Use more flexible width for small screens */
+  max-width: 800px; /* Cap the width on larger screens */
+  height: 60vh; /* Dynamic height based on screen size */
+  max-height: 500px; /* Cap the height */
+  background-color: #35ecaf50;
+  border: 2px solid #f8f8f8;
+  overflow: hidden; /* Prevent ball overflow */
+  box-sizing: border-box; /* Include border in the element's dimensions */
+}
+
+button {
+  padding: 20px;
+}
+
+/* Ball Styles */
+.Ball {
+  position: absolute;
+  width: 12px; /* Ball size */
+  height: 12px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+}
+
+/* Paddle Styles */
+.Paddle {
+  position: absolute;
+  width: 10px;
+  height: 20%; /* Dynamic paddle height as percentage of game area */
+  background-color: #debc26;
+}
+
+.Paddle.left {
+  left: 0;
+}
+
+.Paddle.right {
+  right: 0;
+}

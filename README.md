@@ -55,16 +55,16 @@ This is a React-based Pong game featuring dynamic animations, interactive gamepl
   - After 25, velocity changes every 5 (score = 30, 35, 40, etc.).
   - Late-game velocity has logic to ensure it stays reasonable for user experience (10-20 units).
   - **Comments pulled from GameField.jsx regarding dynamic late-game velocity logic:**
-    {
-    //Quick checks to keep velocity within bounds
-    //--> Keep V between 10-20 to improve user experience while maintaining challenge
-    //--> Higher values can cause frame issues and make the game too difficult
-    //--> If negative, keep V between -10 and -20
-    //--> If positive, keep V between 10 and 20
-    //--> Vx and Vy have different ranges to allow for more horizontal movement
-    //--> Vx stays between 14 and 20 (or neg equivalent); Vy stays between 10 and 16 (or neg equivalent)
-    //--> If Vx or Vy is too high/low, new random value between 15-17 (Vx) or 12-16 (Vy) is assigned
-    }
+    - {
+      - //Quick checks to keep velocity within bounds
+      - //--> Keep V between 10-20 to improve user experience while maintaining challenge
+      - //--> Higher values can cause frame issues and make the game too difficult
+      - //--> If negative, keep V between -10 and -20
+      - //--> If positive, keep V between 10 and 20
+      - //--> Vx and Vy have different ranges to allow for more horizontal movement
+      - //--> Vx stays between 14 and 20 (or neg equivalent); Vy stays between 10 and 16 (or neg equivalent)
+      - //--> If Vx or Vy is too high/low, new random value between 15-17 (Vx) or 12-16 (Vy) is assigned
+    - }
 
 ## **Animation & State Management**
 
@@ -82,4 +82,3 @@ This is a React-based Pong game featuring dynamic animations, interactive gamepl
 
 - **React Hooks** (`useState`, `useEffect`, `useRef`) for managing game logic and performance optimizations.
 - **Modular Component Structure** for reusability and scalability.
-
